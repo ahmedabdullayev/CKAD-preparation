@@ -9,15 +9,15 @@ Playlist: https://youtube.com/playlist?list=PLpbwBK0ptssyIgAoHR-611wt3O9wobS8T&s
 
 ### Exec commands
 
-#### to investigate inside a pod's volume: sh / bash / cat / ls
+#### to investigate inside a pod's volume: sh / bash / cat / ls / curl
 
 ```
-kubectl exec <pod-name> -c <container-name> -- <sh/bash/cat/ls>
+kubectl exec <pod-name> -c <container-name> -- <sh/bash/cat/ls/curl>
 ```
 
 #### CURL simple request
 
 ```
-kubectl exec <pod-name> -i --rm --restart=Never -- curl <ip-address>
+kubectl run <pod-name> -i --rm --restart=Never -- curl <ip-address>
 ```
 
