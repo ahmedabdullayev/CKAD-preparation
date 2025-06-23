@@ -28,3 +28,11 @@ kubectl run <pod-name> -i --rm --restart=Never -- curl <ip-address>
 ```
 kubectl config set-context --current --namespace <ns>
 ```
+
+## Shortcut keys
+
+### Windows
+
+#### Select multiple lines, indent these lines(tab)
+
+SHIFT + V, SHIFT + >, SHIFT + <
