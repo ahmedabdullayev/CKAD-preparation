@@ -21,3 +21,10 @@ kubectl exec <pod-name> -c <container-name> -- <sh/bash/cat/ls/curl>
 kubectl run <pod-name> -i --rm --restart=Never -- curl <ip-address>
 ```
 
+### Context commands
+
+#### Change current namespace
+
+```
+kubectl config set-context --current --namespace <ns>
+```
